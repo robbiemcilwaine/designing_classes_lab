@@ -1,7 +1,7 @@
 public class Computer {
 
     private int storageSpace;
-    public String printerModel;
+    private String printerModel;
 //    private boolean isPrinterConnected;
 
     public Computer(int storageSpace){
@@ -27,7 +27,14 @@ public class Computer {
     }
 
     public void printMessage(String stringToBePrinted){
-        System.out.println(stringToBePrinted);
+        // Check if printerModel string is emptry string
+        // if not empty print print messsage
+        if (this.printerModel != ""){
+            System.out.println(stringToBePrinted);
+        } else {
+            System.out.println("Error! No printer connected!");
+        }
+
     }
 
 }
