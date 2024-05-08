@@ -2,22 +2,25 @@ public class Computer {
 
     private int storageSpace;
     private String printerModel;
-//    private boolean isPrinterConnected;
 
+    // constructor
     public Computer(int storageSpace){
         this.storageSpace = storageSpace;
+        // Use empty string to denote printer is disconnected.
         this.printerModel = "";
-//        this.isPrinterConnected = false;
     }
 
+    // method for getting storage space
     public int getStorage(){
         return this.storageSpace;
     }
 
+    // method for adding storage
     public void addStorage(int storageToBeAdded){
         this.storageSpace += storageToBeAdded;
     }
 
+    // method for setting printer property
     public void setPrinterProperty(String newPrinterModel){
         this.printerModel = newPrinterModel;
     }
@@ -27,8 +30,8 @@ public class Computer {
     }
 
     public void printMessage(String stringToBePrinted){
-        // Check if printerModel string is emptry string
-        // if not empty print print messsage
+        // Check if printerModel string is empty string
+        // if not empty print message
         if (this.printerModel != ""){
             System.out.println(stringToBePrinted);
         } else {

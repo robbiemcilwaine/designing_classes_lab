@@ -1,6 +1,8 @@
 public class Rectangle {
-    int length;
-    int width;
+
+    public int length;
+    public int width;
+
     public Rectangle(int inputLength, int inputWidth){
         this.length = inputLength;
         this.width = inputWidth;
@@ -11,4 +13,5 @@ public class Rectangle {
     public boolean isSquare(){
         return this.length == this.width;
     }
+
 }
